@@ -1,10 +1,18 @@
 #include <stdio.h>
 
+/**
+ * main - Entry Point
+ *
+ * Description: 'print hello world'
+ *
+ * Return: Always 0 (Success
+ */
+
 int main(void)
 {
-    char sentence[] = "\"Programming is like building a multilingual puzzle";
+	char sentence[] = "\"Programming is like building a multilingual puzzle";
 
-    puts(sentence);
+	puts(sentence);
 
-    return (0);
+	return (0);
 }
