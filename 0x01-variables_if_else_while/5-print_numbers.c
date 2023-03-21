@@ -17,4 +17,6 @@ int main(void)
 		start++;
 	}
 	printf("\n");
+
+	return (0);
 }
