@@ -3,7 +3,7 @@
 /**
  * main - Entry Point
  *
- * Description: 'print all alphabeths in lowercase'
+ * Description: 'print all alphabeths in lowercase and uppercase'
  *
  * Return: Always 0 (Success)
  */
@@ -17,9 +17,7 @@ int main(void)
 		start++;
 	}
 
-	putchar('\n');
-
-	start = "A";
+	start = 'A';
 
 	while (start <= 'Z')
 	{
@@ -27,5 +25,6 @@ int main(void)
 		start++;
 	}
 
+	putchar('\n');
 	return (0);
 }
