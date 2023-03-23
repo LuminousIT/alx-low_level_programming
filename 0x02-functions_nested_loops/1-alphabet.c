@@ -5,8 +5,9 @@
  *
  * Description: 'print alphabeth using func'
  *
- * Return: Always 0 (Success)
+ * Return: Always void
  */
+
 void print_alphabet(void)
 {
 	char start = 'a';
