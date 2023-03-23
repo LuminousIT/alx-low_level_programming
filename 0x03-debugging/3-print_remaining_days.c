@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_remaining_days - takes a date and prints how many days are
- * left in the year, taking leap years into account
- * @month: month in number format
- * @day: day of month
+ * print_remaining_days - prints how many days exist including leap year
+ *
+ * @month: accepts month as int
+ * @day: accepts day as int
  * @year: year
  * Return: void
  */
