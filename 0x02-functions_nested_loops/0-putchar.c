@@ -27,6 +27,7 @@ int main(void)
 	int answer = _islower(1);
 	printf("this is the int %d", answer);
 
-	jack_bauer();
+	// jack_bauer();
+	times_table();
 	return (0);
 }
