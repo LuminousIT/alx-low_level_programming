@@ -20,6 +20,7 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 	print_alphabet();
+	print_alphabet_x10();
 
 	return (0);
 }
