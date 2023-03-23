@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -21,6 +22,7 @@ int main(void)
 	_putchar('\n');
 	print_alphabet();
 	print_alphabet_x10();
-
+	int answer = _islower(1);
+	printf("this is the int %d", answer);
 	return (0);
 }
