@@ -25,9 +25,11 @@ int main(void)
 	print_alphabet();
 	print_alphabet_x10();
 	int answer = _islower(1);
-	printf("this is the int %d", answer);
+	// printf("this is the int %d", answer);
 
 	// jack_bauer();
 	times_table();
+	_putchar('\n');
+	print_to_98(98);
 	return (0);
 }
