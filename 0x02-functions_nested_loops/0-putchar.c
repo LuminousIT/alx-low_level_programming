@@ -26,14 +26,7 @@ int main(void)
 	print_alphabet_x10();
 	int answer = _islower(1);
 	printf("this is the int %d", answer);
-	
-	_putchar('\n');
-	int a = print_last_digit(98);
-	_putchar('0' + a);
-	print_last_digit(0);
-	r = print_last_digit(-1024);
-	_putchar('0' + r);
-	_putchar('\n');
 
+	jack_bauer();
 	return (0);
 }
