@@ -24,5 +24,7 @@ int main(void)
 	print_diagonal(10);
 	print_diagonal(-4);
 	print_diagonal(3);
+	_putchar('\n');
+	print_square(5);
 	return (0);
 }
