@@ -9,23 +9,23 @@
  */
 void print_square(int size)
 {
-	if (size <= 0)
-	{
-		_putchar('\n');
-		return;
-	}
 	int row = 0;
-
-	while (row < size)
+	
+	if (size > 0)
 	{
-		int col = 0;
-
-		while (col < size)
+		while (row < size)
 		{
-			_putchar('#');
-			col++;
+			int col = 0;
+
+			while (col < size)
+			{
+				_putchar('#');
+				col++;
+			}
+			_putchar('\n');
+			row++;
 		}
-		_putchar('\n');
-		row++;
 	}
+	else
+		_putchar('\n');
 }
