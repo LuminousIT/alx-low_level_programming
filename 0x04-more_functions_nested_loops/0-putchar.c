@@ -18,5 +18,11 @@ int main(void)
 	print_line(2);
 	print_line(0);
 	print_line(10);
+	_putchar('\n');
+	print_diagonal(2);
+	print_diagonal(0);
+	print_diagonal(10);
+	print_diagonal(-4);
+	print_diagonal(3);
 	return (0);
 }
