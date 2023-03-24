@@ -26,5 +26,7 @@ int main(void)
 	print_diagonal(3);
 	_putchar('\n');
 	print_square(5);
+	print_square(0);
+	print_square(2);
 	return (0);
 }
