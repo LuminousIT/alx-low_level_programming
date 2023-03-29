@@ -13,7 +13,7 @@ int main(void)
 {
 	// print_most_numbers();
 	char *str;
-	str = "0123456789";
+	str = "01234567891";
 	print_rev(str);
 	puts2(str);
 	puts_half(str);
