@@ -3,23 +3,26 @@
 #include "main.h"
 
 /**
- * print_rev - Entry Point
+ * rev_string - Entry Point
  *
  * Description: function that prints a string, in reverse,
  * followed by a new line.
  * @s: accepts pointer str
  * Return: int length of s
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int length = strlen(s);
 
 	char temp;
 
-	for (int i = 0; i < length / 2; i++)
+	int i = 0;
+
+	while (i < length / 2)
 	{
 		temp = *(s + i);
 		*(s + i) = *(s + length - 1 - i);
 		*(s + length - 1 - i) = temp;
+		i++;
 	}
 }
