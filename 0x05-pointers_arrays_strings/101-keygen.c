@@ -13,9 +13,9 @@
 int main(void)
 {
 
-	srand(time(0));
-
 	int num = rand();
+
+	srand(time(0));
 
 	printf("%i\n", num);
 
