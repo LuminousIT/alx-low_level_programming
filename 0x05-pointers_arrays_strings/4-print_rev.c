@@ -1,7 +1,6 @@
 #include "string.h"
 #include "stdio.h"
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_rev - Entry Point
@@ -23,6 +22,4 @@ void print_rev(char *s)
 		*(s + i) = *(s + length - 1 - i);
 		*(s + length - 1 - i) = temp;
 	}
-
-	printf("%s", s);
 }
