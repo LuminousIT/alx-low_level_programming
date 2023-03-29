@@ -16,10 +16,13 @@ void print_rev(char *s)
 
 	char temp;
 
-	for (int i = 0; i < length / 2; i++)
+	int i = 0;
+
+	while (i < length / 2)
 	{
 		temp = *(s + i);
 		*(s + i) = *(s + length - 1 - i);
 		*(s + length - 1 - i) = temp;
+		i++;
 	}
 }
