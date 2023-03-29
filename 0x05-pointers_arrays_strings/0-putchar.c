@@ -16,6 +16,6 @@ int main(void)
 	str = "0123456789";
 	print_rev(str);
 	puts2(str);
-
+	puts_half(str);
 	return (0);
 }
