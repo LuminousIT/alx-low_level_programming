@@ -33,5 +33,12 @@ int main(void)
 	print_array(a, sizeof(a) / sizeof(int));
 	reverse_array(a, sizeof(a) / sizeof(int));
 	print_array(a, sizeof(a) / sizeof(int));
+	
+	char str[] = "Look up!\n";
+	char *ptr;
+
+	ptr = string_toupper(str);
+	printf("%s", ptr);
+	printf("%s", str);
 	return (0);
 }
