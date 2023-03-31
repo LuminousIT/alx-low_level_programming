@@ -13,10 +13,9 @@
 char *leet(char *n)
 {
 	int i, a;
-
-	int d;
-	char b[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char c[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	
+	char b[11] = "aAeEoOtTlL";
+	char c[11] = "4433007711";
 
 	for (i = 0; n[i] != '\0'; i++)
 	{

@@ -5,17 +5,18 @@
 #include <ctype.h>
 
 /**
- * leet - replace vowel in code.
+ * rot13 - rot13 cypher
  * @n : accepts string of word
  * Return: return string
  */
 
-char *leet(char *n)
+char *rot13(char *n)
 {
 	int i, a;
 
-	char b[11] = "aAeEoOtTlL";
-	char c[11] = "4433007711";
+	int d;
+	char b[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char c[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
