@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_diagsums -  function that prints the sum of the
@@ -24,5 +24,5 @@ void print_diagsums(int *a, int size)
 		lsum += a[i];
 		a -= size;
 	}
-	printf("%d, %d", rsum, lsum);
+	printf("%d, %d\n", rsum, lsum);
 }
