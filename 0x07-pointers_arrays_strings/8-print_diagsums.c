@@ -1,5 +1,5 @@
+#include "stdio.h"
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * print_diagsums -  function that prints the sum of the
