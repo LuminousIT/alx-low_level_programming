@@ -12,7 +12,7 @@ void print_chessboard(char (*a)[8])
 
 	/* int col = sizeof(a[0]); */
 
-	int total = sizeof(a); /* row * col */
+	/* int total = sizeof(a); row * col */
 
 	for (i = 0; i < 8; i++)
 	{
