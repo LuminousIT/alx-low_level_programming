@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,16 +10,16 @@
  * Return: void.
  */
 void print_diagsums(int *a, int size)
-{	int rsum, lsum = 0;
+{	int i, rsum, lsum = 0;
 
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		rsum += a[i];
 		a += size;
 	}
 	a -= size;
 
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		lsum += a[i];
 		a -= size;
