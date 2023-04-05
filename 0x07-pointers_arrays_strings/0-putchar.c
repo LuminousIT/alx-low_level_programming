@@ -40,11 +40,16 @@ void simple_print_buffer(char *buffer, unsigned int size)
 
 int main(void)
 {
-	char buffer[98] = {0x00};
-
-	simple_print_buffer(buffer, 98);
-	_memset(buffer, 0x01, 95);
-	printf("-------------------------------------------------\n");
-	simple_print_buffer(buffer, 98); 
+	char board[8][8] = {
+        {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+        {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+        {'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
+	};
+	print_chessboard(board);
 	return (0);
 }
