@@ -15,9 +15,9 @@ void print_chessboard(char (*a)[8])
 
 	int total = sizeof(a); /* row * col */
 
-	for (int i = 0; i < 8; i++)
+	for (i = 0; i < 8; i++)
 	{
-		for (int j = 0; j < col; j++)
+		for (j = 0; j < col; j++)
 		{
 			printf("%c", a[i][j]);
 		}
