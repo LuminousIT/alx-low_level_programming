@@ -7,4 +7,6 @@ int mynameis(int argc, char *argv[]);
 
 int nargs(int argc, char *argv[]);
 
+int args(int argc, char **argv[]);
+
 #endif
