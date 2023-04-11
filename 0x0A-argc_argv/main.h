@@ -9,4 +9,6 @@ int nargs(int argc, char *argv[]);
 
 int args(int argc, char **argv[]);
 
+int mul(int argc, char *argv[]);
+
 #endif
