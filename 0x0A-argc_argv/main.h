@@ -5,4 +5,6 @@ int _putchar(char c);
 
 int mynameis(int argc, char *argv[]);
 
+int nargs(int argc, char *argv[]);
+
 #endif

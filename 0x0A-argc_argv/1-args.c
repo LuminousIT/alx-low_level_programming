@@ -6,6 +6,7 @@
  *
  * Description: 'print arguement count'
  * @argc: count of args
+ * @argv: array of args
  *
  * Return: Always 0 (Success)
  */
