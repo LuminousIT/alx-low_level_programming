@@ -1,0 +1,339 @@
+!<arch>
+_putchar.c      1681584714  501   20    100644  247       `
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+3-islower.c     1681585369  501   20    100644  291       `
+#include <ctype.h>
+#include "main.h"
+
+/**
+ * _islower - Entry Point
+ *
+ * Description: Returns 1 if c is lowercase
+ *	Returns 0 otherwise
+ * @c: accepts c as an int
+ * Return: return 1 if lower, 0 otherwise
+ */
+
+int _islower(int c)
+{
+	if (islower(c) != 0)
+	{
+		return (1);
+	}
+	return (0);
+}
+
+4-isalpha.c     1681585369  501   20    100644  291       `
+#include <ctype.h>
+#include "main.h"
+
+/**
+ * _isalpha - Entry Point
+ *
+ * Description: Returns 1 if c is lowercase
+ *	Returns 0 otherwise
+ * @c: accepts c as an int
+ * Return: return 1 if lower, 0 otherwise
+ */
+
+int _isalpha(int c)
+{
+	if (isalpha(c) != 0)
+	{
+		return (1);
+	}
+	return (0);
+}
+
+6-abs.c         1681585369  501   20    100644  195       `
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * _abs - Entry Point
+ *
+ * Description: return absolute val of int
+ * @n: accepts n as an int
+ * Return: int
+ */
+int _abs(int n)
+{
+	return (abs(n));
+}
+
+5-isupper.c     1681585952  501   20    100644  142       `
+#include "main.h"
+
+/**
+ * _isupper -  function that convs to upper
+ *
+ * @c: int c
+ *
+ * Return: int
+ */
+int _isupper(int c)
+{
+	return (0);
+}
+1-isdigit.c     1681585409  501   20    100644  238       `
+#include <ctype.h>
+#include "main.h"
+
+/**
+ * _isdigit - checks for uppercase char
+ *
+ * @c: accepts int as param
+ * Return: int 1 if true and 0 otherwise
+ */
+int _isdigit(int c)
+{
+	if (isdigit(c) != 0)
+	{
+		return (1);
+	}
+	return (0);
+}
+
+2-strlen.c      1681585464  501   20    100644  258       `
+#include "string.h"
+#include "main.h"
+
+/**
+ * _strlen - Entry Point
+ *
+ * Description: function that returns the length of a string.
+ * @s: accepts pointer s
+ * Return: int length of s
+ */
+int _strlen(char *s)
+{
+	int result = strlen(s);
+
+	return (result);
+}
+3-puts.c        1681585464  501   20    100644  261       `
+#include "stdio.h"
+#include "main.h"
+
+/**
+ * _puts - Entry Point
+ *
+ * Description: function that prints a string, followed by a new line,
+ * to stdout using puts
+ * @str: accepts pointer str
+ * Return: int length of s
+ */
+void _puts(char *str)
+{
+	puts(str);
+}
+
+9-strcpy.c      1681585464  501   20    100644  284       `
+#include <stdio.h>
+#include "main.h"
+#include "string.h"
+
+/**
+ * *_strcpy - Entry Point
+ *
+ * Description: 'print _putchar'
+ * @dest: destination
+ * @src: source
+ *
+ * Return: char (destination copy) (Success)
+ */
+char *_strcpy(char *dest, char *src)
+{
+	return (strcpy(dest, src));
+}
+100-atoi.c      1681585464  501   20    100644  202       `
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * _atoi - Entry Point
+ *
+ * Description: 'conv str to int'
+ * @s: accepts *s char
+ * Return: Always 0 (Success)
+ */
+int _atoi(char *s)
+{
+	return (atoi(s));
+}
+0-strcat.c      1681585515  501   20    100644  275       `
+#include "main.h"
+#include "string.h"
+
+/**
+ * _strcat - Entry Point
+ *
+ * Description:  function that concatenates two strings.
+ * @dest: initial str.
+ * @src: source str
+ * Return: Always 0 (Success)
+ */
+char *_strcat(char *dest, char *src)
+{
+	return (strcat(dest, src));
+}
+
+1-strncat.c     1681585515  501   20    100644  312       `
+#include "main.h"
+#include "string.h"
+
+/**
+ * _strncat - Entry Point
+ *
+ * Description:  function that concatenates two strings.
+ * @dest: initial str.
+ * @src: source str
+ * @n: number of bytes
+ * Return: Always 0 (Success)
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	return (strncat(dest, src, n));
+}
+
+2-strncpy.c     1681585515  501   20    100644  311       `
+#include "main.h"
+#include "string.h"
+
+/**
+ * _strncpy - Entry Point
+ *
+ * Description:  function that concatenates two strings.
+ * @dest: initial str.
+ * @src: source str
+ * @n: number of bytes
+ * Return: Always 0 (Success)
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	return (strncpy(dest, src, n));
+}
+
+3-strcmp.c      1681585515  501   20    100644  250       `
+#include "main.h"
+#include "string.h"
+
+/**
+ * _strcmp - Entry Point
+ *
+ * Description: function that compares two strings.
+ * @s1: initial str.
+ * @s2: sec str
+ * Return: int (result)
+ */
+int _strcmp(char *s1, char *s2)
+{
+	return (strcmp(s1, s2));
+}
+0-memset.c      1681585535  501   20    100644  250       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _memset - function that fills memory with a constant byte
+ * @s: char
+ * @b: char
+ * @n: unsigned int
+ *
+ * Return: char.
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	return (memset(s, b, n));
+}
+1-memcpy.c      1681585535  501   20    100644  251       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _memcpy -  function that copies memory area
+ * @dest: dest
+ * @src: src
+ * @n: unsigned int
+ *
+ * Return: char.
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	return (memcpy(dest, src, n));
+}
+
+2-strchr.c      1681585535  501   20    100644  221       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strchr - function that locates a character in a string
+ * @s: string
+ * @c: char to locate
+ *
+ * Return: char.
+ */
+char *_strchr(char *s, char c)
+{
+	return (strchr(s, c));
+}
+
+3-strspn.c      1681585535  501   20    100644  250       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strspn - function that gets the length of a prefix substring
+ * @s: string
+ * @accept: char to locate
+ *
+ * Return: char.
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+	return (strspn(s, accept));
+}
+4-strpbrk.c     1681585535  501   20    100644  252       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strpbrk - function that searches a string for any of a set of bytes
+ * @s: string
+ * @accept: char to locate
+ *
+ * Return: char.
+ */
+char *_strpbrk(char *s, char *accept)
+{
+	return (strpbrk(s, accept));
+}
+5-strstr.c      1681585535  501   20    100644  250       `
+#include "main.h"
+#include "string.h"
+
+/**
+ * _strstr -  function that locates a substring.
+ * @haystack: string
+ * @needle: string to locate
+ *
+ * Return: char.
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	return (strstr(haystack, needle));
+}
