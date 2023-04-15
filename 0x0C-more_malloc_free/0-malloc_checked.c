@@ -6,13 +6,13 @@
  * Description: function that allocates memory using malloc.
  * @b: int b
  *
- * Return: Always 0 (Success)
+ * Return: int
  */
 void *malloc_checked(unsigned int b)
 {
 	int *c;
 
-	c = malloc(sizeof(b));
+	c = malloc(b);
 
 	if (c == NULL)
 	{
